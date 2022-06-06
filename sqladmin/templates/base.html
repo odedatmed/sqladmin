@@ -31,6 +31,10 @@
     <title>{{ title }}</title>
   </head>
   <body>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     {% block body %}
     <main>{% block main %} {% endblock %}</main>
     {% endblock %}
